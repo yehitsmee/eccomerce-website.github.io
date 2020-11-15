@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Ecommerce Website Design</title>
+<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+<!-- Header section -->
+
+<div class="header">
+<div class="container">
+
+<!-- Navigation Bar -->
+
+<div class="navbar">
+<div class="logo">
+  <img src="logo2.png"  width="125px">
+</div>
+<nav>
+<ul id="MenuItems">
+<li><a href="index.html">Home</a></li>
+<li><a href="explore.php">Books</a></li>
+<li><a href="">About</a></li>
+<li><a href="">Contact</a></li>
+<li><a href="account.html">Login</a></li> 
+</ul>
+</nav>
+<img src="menulogo.png" class="menuicon" onclick="menutoggle()">
+</div>
+</div>
+</div>
+<br>
+<!-------account-page------------->
+
+
+<div class="account-page">
+  <div class="container">
+       <div class="row">
+           <div class="col-2">
+              <img src="bg5.png" width=100%>
+           </div>
+
+       <div class="col-2">
+        <div class="form-container">
+         <div class="form-btn">
+            <span onclick="login()">Login</span>
+            <span onclick="register()">Register</span>
+         </div>
+
+     <form id="LoginForm" action="login.php" method="POST">
+        <input type="text" name="Username" placeholder="Username">
+        <input type="password" name="Password" placeholder="Password">
+        <button type="submit" name="submit" class="btn">Login</button>
+        <a href="">Forgot password</a>
+        <p><a href='login2.html'> Vendor? :Click Here</a></p>
+     </form>
+
+     <form id="RegForm" action="insert.php" method="POST">
+      <!-- display validation errors here-->
+
+
+        <input type="text" name="Username" placeholder="Username">
+       
+        <input type="email" name="Email" placeholder="Email">
+
+        <input type="password" name="Password" placeholder="Password">
+        <button type="submit" name="submit" class="btn">Register</button>
+        <!--<?php include('errors.php'); ?>-->
+        <hr id="Indicator">
+        <p><a href='login2.html'> Vendor? :Click Here</a></p>
+     </form>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div><br>
+
+
+<!-- Footer -->
+
+<div class="footer">
+<div class="container">
+<div class="row">
+
+<div class="footercol1">
+<p>You can find novels of different genre in our Store.</p>
+</div>
+
+<div class="footercol3">
+<h3>Useful Links</h3>
+<ul>
+  <a href=""><li>Discount sales</li></a>
+  <a href="services.html"><li>Our services</li></a>
+</ul>
+</div>
+
+<div class="footercol4">
+<h3>Follow Us</h3>
+<ul>
+  <li><a href="" class="fa fa-instagram"></a>Instagram</li>
+  <li><a href="" class="fa fa-facebook"></a>Facebook</li>
+  <li><a href="" class="fa fa-twitter"></a>Twitter</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- Copyright -->
+
+<hr>
+<p class="copyright">&#169;Copyright 2020 - Online Book Store</p>
+</div>
+</div>
+
+<!-- Menu Button -->
+<script>
+  var MenuItems=document.getElementById("MenuItems");
+  MenuItems.style.maxHeight="0px";
+  function menutoggle(){
+    if(MenuItems.style.maxHeight=="0px")
+    {
+      MenuItems.style.maxHeight="200px";
+    }
+    else
+    {
+      MenuItems.style.maxHeight="0px";
+    }
+  }
+</script>
+
+<!--------js for toggle Form-------->
+<script>
+var LoginForm=document.getElementById("LoginForm");
+var RegForm=document.getElementById("RegForm");
+var Indicator=document.getElementById("Indicator");
+   function register(){
+    RegForm.style.transform="translateX(0px)";
+    LoginForm.style.transform="translateX(0px)";
+    Indicator.style.transform="translateX(100px)";
+   }
+
+   function login(){
+    RegForm.style.transform="translateX(300px)";
+    LoginForm.style.transform="translateX(300px)";
+    Indicator.style.transform="translateX(0px)";
+   }
+
+</script>
+
+</body>
+</html>
+

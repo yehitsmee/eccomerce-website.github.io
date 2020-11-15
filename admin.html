@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ecommerce Website Design</title>
+<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+<!-- Header section -->
+
+<div class="header">
+<div class="container">
+
+<!-- Navigation Bar -->
+
+<div class="navbar">
+<div class="logo">
+  <img src="logo2.png"  width="125px">
+</div>
+<nav>
+<ul id="MenuItems">
+<li><a href="index.html">Home</a></li>
+<li><a href="account.html">Login</a></li> 
+</ul>
+</nav>
+<img src="menulogo.png" class="menuicon" onclick="menutoggle()">
+</div>
+</div>
+</div>
+
+<h1 style="font-family:Courier;display: inline-block;background-color: orange;">Categories</h1>
+<div class="categories">
+<div class="row1">
+<div class="col2">
+<div class="container">
+	
+<a href="adminindex.php"><img src="fantasy2.jpg"></a>
+<div class="text-block">
+ <h3>Fantasy Books</h3>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<div class="col2">
+<div class="container">
+<a href="adminindexthriller.php"><img src="thriller2.jpg"></a>
+<div class="text-block">
+<h3>Thriller & Mystery<br> Books</h3>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="col2">
+<div class="container">
+<a href="adminindexaction.php"><img src="adventure.jpg"></a>
+<div class="text-block">
+    <h3>Action & Adventure<br> Books</h3>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="col2">
+<div class="container">
+<a href="adminindexcomic.php"><img src="comicbook3.jpg"></a>
+<div class="text-block">
+    <h3>Comic Books</h3>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="col2">
+<div class="container">
+<a href="adminindexauto.php"><img src="autob.jpg"></a>
+<div class="text-block">
+    <h3>Autobiography</h3>
+
+</div>
+</div>
+</div>
+
+
+
+
+<div class="col2">
+<div class="container">
+<a href="adminindexscience.php"><img src="sciencefiction.jpg"></a>
+<div class="text-block">
+    <h3>Science Fiction</h3>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Menu Button -->
+<script>
+	var MenuItems=document.getElementById("MenuItems");
+	MenuItems.style.maxHeight="0px";
+	function menutoggle(){
+		if(MenuItems.style.maxHeight=="0px")
+		{
+			MenuItems.style.maxHeight="200px";
+		}
+		else
+		{
+			MenuItems.style.maxHeight="0px";
+		}
+	}
+</script>
+
+
+
+</body>
+</html>
