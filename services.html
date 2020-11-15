@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Our Services</title>
+<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+<!-- Header section -->
+<div class="header">
+<div class="container">
+
+<!-- Navigation Bar -->
+
+<div class="navbar" >
+<div class="logo">
+	<img src="logo2.png" width="125px">
+</div>
+<nav>
+<ul id="MenuItems">
+<li><a href="index.html">Home</a></li>
+<li><a href="explore.php">Books</a></li>
+<li><a href="">About</a></li>
+<li><a href="">Contact</a></li>
+<li><a href="account.html">Login</a></li>	
+</ul>
+</nav>
+<img src="menulogo.png" class="menuicon" onclick="menutoggle()">
+</div>
+</div>
+</div>
+<br>
+<!-- services-->
+<h2 class="title">Services</h2>
+<center><p>We have special service for our customers!,we have collaboration with some of the book publishers which are listed below<b>(T&C Apply)</b></p></center><br>
+	<div class="smallcintainer">
+	  <div class="row">
+	    <div class="col6">
+	      <a href="https://www.penguinrandomhouse.com/" target="blank"><img src="p1.png" href="" height="265px" width="300px"></a>
+	      <h4 style="color:red">Penguin Random House</h4>
+	      <small><u><b>Notable imprints</b></u>: Knopf Doubleday, Crown Publishing, Viking Press</small>
+	    </div>
+
+	    <div class="col6">
+	      <a href="https://www.hachette.com/en/homepage/" target="blank"><img src="p2.png" height="260px" width="300px"> </a>
+	      <h4 style="color:red">Hachette Livre</h4>
+	      <small><u><b>Notable imprints</b></u>: Grand Central Publishing, Little, Brown and Company, Mulholland Books</small>
+	    </div>
+
+	       <div class="col6">
+	      <a href="https://harpercollins.co.in/" target="blank"><img src="p3.png" height="260px" width="300px"> </a>
+	      <h4 style="color:red">HarperCollins</h4>
+	      <small><U><b>Notable imprints</b></U>: Avon Romance, Harlequin Enterprises, Harper, William Morrow</small>
+	    </div>
+
+	    </div>
+
+	  </div>
+  <button style="background-color:black; color:gold; width: 100px; height: 30px; position: relative; left:715px; bottom:30px;">Book now</button>
+<!-- Footer -->
+
+<div class="footer">
+<div class="container">
+<div class="row">
+
+<div class="footercol1">
+<p>You can find novels of different genre in our Store.</p>
+</div>
+
+<div class="footercol3">
+<h3>Useful Links</h3>
+<ul>
+	<a href=""><li>Discount sales</li></a>
+	<a href=""><li>Our services</li></a>
+	
+</ul>
+</div>
+
+<div class="footercol4">
+<h3>Follow Us</h3>
+<ul>
+	<li><a href="" class="fa fa-instagram"></a>Instagram</li>
+	<li><a href="" class="fa fa-facebook"></a>Facebook</li>
+	<li><a href="" class="fa fa-twitter"></a>Twitter</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- Copyright -->
+
+<hr>
+<p class="copyright">&#169;Copyright 2020 - Online Book Store</p>
+</div>
+</div>
+
+<!-- Menu Button -->
+<script>
+	var MenuItems=document.getElementById("MenuItems");
+	MenuItems.style.maxHeight="0px";
+	function menutoggle(){
+		if(MenuItems.style.maxHeight=="0px")
+		{
+			MenuItems.style.maxHeight="200px";
+		}
+		else
+		{
+			MenuItems.style.maxHeight="0px";
+		}
+	}
+</script>
+
+</body>
+</html>
